@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".LoginFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scroll_main_activity">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:id="@+id/lymain"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum=".5">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/loginlogo" />
+            </LinearLayout>
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:visibility="gone"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/background"
+                android:paddingBottom="10dp"
+                android:orientation="vertical"
+                android:weightSum=".5">
+
+                <EditText
+                    android:id="@+id/emailInput"
+                    android:hint="Email Address"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#ffffff"
+                    android:drawableLeft="@drawable/ic_email"
+                    android:drawablePadding="4dp"
+                    android:drawableStart="@drawable/ic_email"
+                    android:ems="10"
+                    android:inputType="textEmailAddress"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/passwordInput"
+                    android:hint="Password"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#ffffff"
+                    android:drawableLeft="@drawable/ic_pass"
+                    android:drawablePadding="4dp"
+                    android:ems="10"
+                    android:inputType="textPassword"
+                    android:textStyle="bold"
+                    android:drawableStart="@drawable/ic_pass" />
+
+                <Button
+                    android:id="@+id/loginBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#9f71bac4"
+                    android:drawableRight="@drawable/ic_login"
+                    android:ems="10"
+                    android:textAllCaps="false"
+                    android:text="Login"
+                    android:textColor="#003366"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:drawableEnd="@drawable/ic_login" />
+                <Button
+                    android:id="@+id/regLBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#9f71bac4"
+                    android:drawableRight="@drawable/ic_login"
+                    android:ems="10"
+                    android:textAllCaps="false"
+                    android:text="Registration"
+                    android:textColor="#003366"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:drawableEnd="@drawable/ic_login" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

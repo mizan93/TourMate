@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="5dp"
+    android:layout_margin="5dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/listPreferredItemHeight">
+
+        <TextView
+            android:id="@+id/single_temp_tv_fwf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Max Temp" />
+
+
+        <TextView
+            android:id="@+id/single_max_temp_tv_fwf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:text="Min Temp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:id="@+id/single_date_tv_fwf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentBottom="true"
+            android:text="Current Date"/>
+
+        <TextView
+            android:id="@+id/single_day_of_week_tv_fwf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:text="Day of Week"
+            android:layout_alignParentRight="true" />
+
+        <ImageView
+            android:id="@+id/fcimg"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerInParent="true"
+            app:srcCompat="@drawable/common_full_open_on_phone" />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

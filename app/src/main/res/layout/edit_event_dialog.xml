@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+  <RelativeLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content">
+      <EditText
+          android:id="@+id/edteventname"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="5dp"
+          android:layout_marginRight="5dp"
+          android:layout_marginLeft="5dp"
+          android:hint="Event Name" />
+      <TextView
+          android:id="@+id/edteventsdate"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/edteventname"
+          android:layout_marginRight="5dp"
+          android:layout_marginBottom="5dp"
+          android:hint="Start Date"
+          android:layout_marginLeft="5dp"
+          android:drawableLeft="@drawable/ic_cal"/>
+      <TextView
+          android:id="@+id/edteventfdate"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="End Date"
+          android:layout_below="@+id/edteventsdate"
+          android:layout_marginRight="5dp"
+          android:layout_marginLeft="5dp"
+          android:drawableLeft="@drawable/ic_cal"/>
+      <EditText
+          android:id="@+id/edteventbudget"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/edteventfdate"
+          android:layout_marginTop="5dp"
+          android:layout_marginRight="5dp"
+          android:layout_marginLeft="5dp"
+          android:inputType="number|numberSigned"
+          android:hint="Budget" />
+
+      <Button
+          android:id="@+id/buttoncancel"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="5dp"
+          android:layout_marginBottom="5dp"
+          android:background="#9f71bac4"
+          android:layout_alignParentLeft="true"
+          android:layout_below="@+id/edteventbudget"
+          android:text="Cancel" />
+
+      <Button
+          android:id="@+id/buttonsave"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginRight="5dp"
+          android:layout_marginBottom="5dp"
+          android:background="#9f71bac4"
+          android:layout_alignParentRight="true"
+          android:layout_below="@+id/edteventbudget"
+          android:text="Save" />
+  </RelativeLayout>
+</LinearLayout>

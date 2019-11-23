@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">TourMate</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="row_menu">⋮</string>
+    <string name="weather_api">380199723cebdb85ef2e16cc30cee5b6</string>
+    <string name="google_maps_api">AIzaSyBz0QzCaukHIGO765nkfp7BqEQsPo39Ufo</string>
+    <string name="search_by_city">Enter City Name</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
